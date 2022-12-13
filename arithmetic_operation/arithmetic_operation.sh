@@ -1,5 +1,7 @@
 #! /bin/bash
 
-read EXPR
-echo "scale=3; ${EXPR}" | bc -l
+# zsh works same
+
+read x
+printf '%.3f\n' $(echo $x | bc -l)
 
